@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
 
   "name": "Giant Coupon Loader",
   "description": "This extension will click all coupon 'Load to card' buttons on Giant Foodstore's member website.",
