@@ -11,5 +11,5 @@ var filter = {
         hostEquals: 'giantfoodstores.com'
     }]
 };
-chrome.webNavigation.onCommitted.addListener(onWebNav, filter);
+chrome.webNavigation.onCompleted.addListener(onWebNav, filter);
 chrome.webNavigation.onHistoryStateUpdated.addListener(onWebNav, filter);
