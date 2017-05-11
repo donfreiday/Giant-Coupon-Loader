@@ -1,19 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "Giant Coupon Loader",
-  "description": "This extension will click all coupon 'Load to card' buttons on Giant Foodstore's member website.",
-  "version": "1.0",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "page_action": {
-    "default_title": "Load coupons on giantfoodstores.com"
-  },
-
-  "permissions": [
-    "https://giantfoodstores.com/",
-    "webNavigation"
+  "name": "Giant BonusCard Loader",
+  "description": "This extension loads coupons from the Giant website to a member's bonus card.",
+  "version": "1.1",
+  "content_scripts": [
+    {
+      "matches": ["https://giantfoodstores.com/*"],
+      "js": ["loadoffers.js"],
+      "run_at": "document_end"
+    }
   ]
 }
