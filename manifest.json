@@ -6,7 +6,7 @@
   "version": "1.1",
   "content_scripts": [
     {
-      "matches": ["https://giantfoodstores.com/*"],
+      "matches": ["https://giantfoodstores.com/*","https://global.americanexpress.com/dashboard"],
       "js": ["loadoffers.js"],
       "run_at": "document_end"
     }
