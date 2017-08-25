@@ -4,6 +4,6 @@ window.onload = function() {
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].click();
     }
-  }, 3000);
+  }, 7000);
 
 }
